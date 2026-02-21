@@ -1,0 +1,80 @@
+Lecture : 1
+react framework made by vercel
+
+file based routing no need to use browser router
+server side rendering
+seo
+you can write api code of backend routes single server 
+full stack power
+dedicated image tag to avoid lazy loading
+seo and lead generation
+fast loading
+static, dynamic website
+
+used by Netflix, claude, vercel etc
+
+Lecture : 2
+npx create-next-app@latest
+
+next dev : starts development server
+next build : builds app for production
+next start : starts the production server
+next lint : Runs ESLint
+
+layout js is main file
+
+Lecture : 3
+
+nextjs_app file name
+.next => generates when first time app build or run
+(page router before version 13) app folder/router 
+=> page.js is home page
+=> layout.js is root layout
+
+node modules are those packages are used to run the project
+
+public folder static assets
+.gitignore
+package.json > your project is dependent on which packages
+
+layout.js is used to wrap pages and component with a hared structure such as headers, footers, or navigation bars. Consistent layout
+
+about/
+	page.js		//About page
+	layout.js	//Layout page
+
+contact/
+	page.js		//Contact page
+
+
+ctrl u => line wrap => body tag
+children prop in layout means on the route of current file you are that children will be injected like /about page
+
+Lecture : 4
+Objectives => Routes, Nested Routes, Nested Layout
+
+http://localhost:3000 => root page.js file
+
+we cant name file service in service folder its necessary to name page.js or page.jsx
+index.js will also not return
+
+nested routes follow same rule page.jsx inside folder e.g. about/teams/page.jsx
+nested layout follow same rule layout.jsx inside folder e.g. about/layout.jsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
