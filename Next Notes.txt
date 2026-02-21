@@ -61,6 +61,22 @@ index.js will also not return
 nested routes follow same rule page.jsx inside folder e.g. about/teams/page.jsx
 nested layout follow same rule layout.jsx inside folder e.g. about/layout.jsx
 
+Lecture : 5
+a tag => Link component avoid refresh and gives hot reloading
+import './globals.css'; in layout.js otherwise css will not apply
+make different folder for routes outside the app folder and import in layout.js in app folder
+
+Lecture : 6 
+route group => way to organize your routes without effecting the urls e.g. user(http://localhost:3000/about), admin(http://localhost:3000/about) etc
+dont want to show user type just about page
+users => (users) route group that doesnt polute url
+(users) => actual app folder
+route group doesnt show on url
+
+Lecture : 7
+how to show navigation all pages except about
+
+
 
 
 
