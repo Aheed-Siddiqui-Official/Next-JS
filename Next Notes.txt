@@ -75,6 +75,25 @@ route group doesnt show on url
 
 Lecture : 7
 how to show navigation all pages except about
+move about folder in root app folder 
+
+Lecture : 8
+how to install tailwind css in next.js application
+ls, mkdir, rmdir
+
+lecture : 9
+Global css v/s css modules
+
+import "../globals.css";
+if we enter a background eg in global css it will change the entire body
+link in next/react => a tag in html
+className in next/react/tailwind => class in html/css
+
+import style from "./service.module.css"
+service.module.css
+same class names but different functionalities => css modules
+className={style.common_heading} => class="service-module__dovOla__common_heading"  in html inspect
+global and module both have same class so tranformed it deliberately so no conflict
 
 
 
