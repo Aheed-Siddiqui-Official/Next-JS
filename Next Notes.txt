@@ -24,7 +24,6 @@ next lint : Runs ESLint
 layout js is main file
 
 Lecture : 3
-
 nextjs_app file name
 .next => generates when first time app build or run
 (page router before version 13) app folder/router 
@@ -94,6 +93,72 @@ service.module.css
 same class names but different functionalities => css modules
 className={style.common_heading} => class="service-module__dovOla__common_heading"  in html inspect
 global and module both have same class so tranformed it deliberately so no conflict
+
+Lecture : 10
+image component in next.js
+when use any img in next.js must use width and height
+auto optimize file size
+convert img to webp
+
+lazy loading and decoding. Both help make pages faster, reduce bandwidth usage, and improve Core Web Vitals (like LCP, CLS, and FID/INP).
+
+1. Lazy Loading in Next.js <Image>
+Lazy loading means the browser delays fetching and processing the image until it's needed — typically when the image is close to (or inside) the user's viewport (the visible part of the page).
+How it works in Next.js:
+
+By default: loading="lazy" (automatic since Next.js 11+)
+The browser only starts downloading the image file when it calculates that the image will soon appear on screen (usually ~50–100px before it enters the viewport).
+
+Decoding controls when and how the browser processes (decodes) the downloaded image bytes into pixels that can be painted on screen.
+Images (JPEG, WebP, AVIF, PNG…) arrive compressed → browser must decode them before showing.
+
+Why async is usually best (and default):
+
+Prevents main-thread blocking → smoother scrolling and interaction
+Avoids jank (stutter) when many images are loading
+Modern browsers decode images off the main thread anyway, so async aligns with that
+
+fill={true} => no width and height
+if using fill property and want to show full img on parent component then parent comp should be relative
+quality = {75} by default can do 100 too
+priority = {false} loading website need on spot or lazy loading on that section
+placeholder = {blur} => internet slow can show blur img
+must include blurDataUrl => if using placeholder blur
+if want to show blur part must import image from source
+
+Lecture : 11
+Next.js fonts
+
+font module of next itself => fast optimization
+no request again and again to google fonts server
+
+import {Roboto} from "next/font/google"
+subset target audience language seo no extra fonts loading
+
+const roboto = Roboto({
+  subsets:["latin"],
+  weight:"400"
+})
+
+html tag => lang="en"
+
+Lecture : 12
+How to Add Multiple fonts in Next
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+});
+
+<body className={`${roboto.variable} ${workSans.variable}`}>
+
+body { 
+ --font-work: var(--font-work-sans);
+}
+
+<h1 className="text-3xl text-red-500 underline font-roboto">Welcome, MAS</h1>
+
+
 
 
 
