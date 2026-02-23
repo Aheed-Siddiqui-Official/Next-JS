@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <header className="grid grid-cols-2">
+    <header className="grid grid-cols-2 font-work">
       <div className="">MAS Logo</div>
       <nav>
         <ul className="flex gap-4">
