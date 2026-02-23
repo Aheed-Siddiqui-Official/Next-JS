@@ -1,9 +1,22 @@
-import './globals.css';
+import Navigation from "../component/Navigation.jsx";
+import "./globals.css";
+import { Roboto, Work_Sans } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+});
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body>
+    <html lang="en">
+      <body className={`${roboto.variable} ${workSans.variable}`}>
+        <Navigation />
         {children}
       </body>
     </html>
