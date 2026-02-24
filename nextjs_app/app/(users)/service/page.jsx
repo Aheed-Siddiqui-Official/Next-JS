@@ -1,6 +1,13 @@
 import Image from "next/image";
 import style from "./service.module.css";
-import boy from "../../../public/boy.jpg";
+import boy from "../../../public/images/boy.jpg";
+
+export const metadata = {
+  title: "Service Page",
+  description: "This is my service page",
+  authors: [{ name: "MAS" }, { name: "AAS" }],
+  keywords:['nextjs', "reactjs", "fullstack"]
+};
 
 const service = () => {
   return (
