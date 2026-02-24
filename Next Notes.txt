@@ -209,6 +209,11 @@ if you make a page/file client component and use other server components in that
 
 parent use client component can make their inherit server child component to client component
 
+secure data dont want to expose server comp
+next fetch all data at server => dump on load
+react functions/event listeners cant use in server component
+frontend react => use client
+backend express => server comp
 
 
 
