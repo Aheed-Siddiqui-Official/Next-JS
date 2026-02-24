@@ -158,8 +158,56 @@ body {
 
 <h1 className="text-3xl text-red-500 underline font-roboto">Welcome, MAS</h1>
 
+Lecture : 13
+meta data seo mastery
 
+when search your website a heading and paragraph appears => meta tag
+head tag doesn't matter in next.js
+meta viewport tag doesn't makes your website responsive
+meta data object
+if seo matters alot in your website use next.js
 
+export const metadata = {
+  title: "Service Page",
+  description: "This is my service page",
+  authors: [{ name: "MAS" }, { name: "AAS" }],
+  keywords:['nextjs', "reactjs", "fullstack"]
+};
+
+root layout.js meta-data
+
+og tags help to share url in card format
+metadatabase gets your url
+
+Lecture : 14 
+React Server vs Client Component in Next.js
+
+next.js is a fullstack framework you can write frontend backend code both
+the things you want to do in react you can do in next.js by making client component
+server related code is done in server component file => secret api keys, data get display
+fcp => first contentful pain if opening a page but it gets by default loaded you get in server component
+
+not formal definations
+react frontend code in client comp
+express backend code in server component
+
+thats why called fullstack framework
+
+app folder files are by default react server component except error.js
+to use states and fire button click events we have to convert app files to client component
+
+in client component when making jsx function never make it async
+
+by default the file is react server component => we make it client component
+
+"use client" => makes client component
+
+in server component network tab we cant see the urls ana apikeys without exposing to client
+but in client component we can see it leaks urls and api keys or .env files
+
+if you make a page/file client component and use other server components in that file without "use client" they automatically becomes client components
+
+parent use client component can make their inherit server child component to client component
 
 
 

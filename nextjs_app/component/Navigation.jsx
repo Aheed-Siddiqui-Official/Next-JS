@@ -15,6 +15,14 @@ const Navigation = () => {
           </li>
 
           <li>
+            <Link href="/clientcomp">ClientComp</Link>
+          </li>
+
+          <li>
+            <Link href="/servercomp">ServerComp</Link>
+          </li>
+
+          <li>
             <Link href="/contact">Contact</Link>
           </li>
 
