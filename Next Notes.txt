@@ -236,6 +236,22 @@ if you want to use dynamic routes in client component the put promise data in =>
 
 write 'use client' => remove async wait => use 'use()' in promise data
 
+Lecture : 17
+How to Use URL Query Strings in Next.js
+SearchParams : useful for building features like filtering, sorting, and pagination(how many products to show based on page) - all which are essential in ecommerce
+
+after question mark data in the url is called query string
+
+http://localhost:3000/products?category=shoes
+
+http://localhost:3000/products?category=shoes&page=2 => show second page laptop data
+
+
+
+
+
+
+
 
 
 
