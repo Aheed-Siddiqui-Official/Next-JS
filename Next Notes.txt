@@ -228,6 +228,13 @@ username/[posts]/page.jsx
 
 dynamic route segments can only be made in server components
 
+Lecture : 16
+Dynamic route segments in client components
+if we write 'use client' in client component : <SingleProfilePost> is an async Client Component. Only Server Components can be async at the moment. This error is often caused by accidentally adding `'use client'` to a module that was originally written for the server.
+
+if you want to use dynamic routes in client component the put promise data in => use() hook
+
+write 'use client' => remove async wait => use 'use()' in promise data
 
 
 
