@@ -215,10 +215,18 @@ react functions/event listeners cant use in server component
 frontend react => use client
 backend express => server comp
 
+Lecture : 15
+Dynamic route segments
+dynamic data in routes
+by wrapping a folder name in [] brackets
 
+[username] is a dynamic route segment
 
+nested dynamic route segment 
+users/[username]/page.jsx
+username/[posts]/page.jsx
 
-
+dynamic route segments can only be made in server components
 
 
 
