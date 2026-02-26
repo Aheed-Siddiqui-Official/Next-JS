@@ -267,6 +267,26 @@ const Products = async ({ searchParams }) => {
 
 export default Products;
 
+Lecture : 18
+ProductList.jsx
+useSearchParams 
+after ? is called query string
+
+query string data in
+server component => searchParams
+client component => useSearchParams => is a hook gets from next/navigation
+
+Lecture : 19
+Next.js catchAll segments
+handle dynamic nested route without having to manually define each level of the path
+
+/shop/clothing/men/shirts
+app/shop/[...slug]/page.js
+
+
+
+
+
 
 
 
