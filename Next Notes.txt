@@ -283,14 +283,38 @@ handle dynamic nested route without having to manually define each level of the 
 /shop/clothing/men/shirts
 app/shop/[...slug]/page.js
 
+Lecture : 20
+Data Fetching with React Server Components
 
+Lecture : 21
+How to Fetch Data in Next.js Client Component
+'use client'
+remove async/await
+no searchParams => useSearchParams => const userName = searchParams.get("name");
 
+useEffect for async await use
 
+Lecture : 22
+Next.js Auto Loading Animation with loading.jsx
+if we create loading file in app router auto matic loading will come on all pages
 
+in DataCard.jsx
+await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 500);
+  });
 
+Lecture : 23
+Build a Random Jokes Generator App in Next.js with API & Tailwind CSS
+button click, evt listeners are not used in server components
 
+Lecture : 24
+Suspense in Next.js: Load Async Part Only — Rest of UI Loads Immediately!
+lets you display a fallback until its children have finished loading.
+e.g. show loading spinner in just part of a page
 
-
+fallback props in suspense => fallback shows until the data in the component is not fetched
 
 
 
