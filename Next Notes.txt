@@ -316,6 +316,32 @@ e.g. show loading spinner in just part of a page
 
 fallback props in suspense => fallback shows until the data in the component is not fetched
 
+Lecture : 25
+Connect Next.js with MySQL🔥Live Fetch Data (mysql2, API routes)
+MySQL2 package
+config folder => db.jsx
+mysql.createConnection() => development
+mysql.createPool() => multiple reusable connection => production
+next_js => app => (users) => static => page.jsx
+
+Lecture : 26
+Static vs Dynamic Pages in Next.js Explained with Live Build & MySQL Example🔥
+in next js all routes are static by default in build env too
+a route becomes dynamic when it depends on data that change between requests
+
+rendering => dynamic => page.jsx
+export const dynamic = 'force-dynamic'
+static page code before build and dynamic page data run after build
+
+o build => static
+f build => dynamic
+
+in static if we did npm run build and the edit something in db so it will not reflect 
+but if we did npm build and then edit something in db so it will reflect on page after refresh
+
+Lecture : 27
+ISR in next.js
+
 
 
 
