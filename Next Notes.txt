@@ -341,10 +341,26 @@ but if we did npm build and then edit something in db so it will reflect on page
 
 Lecture : 27
 ISR in next.js
+Incremental static regeneration
+updates static content without rebuilding the entire set
+static date comes from cache memory not from server
+but in dynamic pages every time server call is done
+isr refresh according 5o the time given =>
+if the data changes in that time the user sees the same data until a new isr request isn't sent
 
+Lecture : 28
+react cache
+function in react 18
+store the result of function on its arguments so it doesn't run again if called with the same arguments
+only used on server component to avoid repeated data fetching
+we have to write await with promises
+wrap the function in cache that you think is most repetative
 
-
-
+Lecture 29 : 
+REAL DEMO: Fix 404 Route Errors with notFound() in Next.js | Create not-found.js Page
+finding a doctor that doesnot exist in db instead of page doesn't exist
+create not-found.jsx on app router file
+user => doctors => [id] => page.jsx
 
 
 
