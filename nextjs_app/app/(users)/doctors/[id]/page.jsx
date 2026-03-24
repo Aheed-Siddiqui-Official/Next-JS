@@ -4,16 +4,16 @@ import { notFound } from "next/navigation";
 
 // Return a list of `params` to populate the [slug] dynamic segment
 
-// export async function generateStaticParams() {
-//   const [doctors] = await db.execute(`select doctor_id from doctors`);
-//   return doctors.map((doctor) => ({ id: doctor.doctor_id.toString() }));
-// }
+export async function generateStaticParams() {
+  const [doctors] = await db.execute(`select doctor_id from doctors`);
+  return doctors.map((doctor) => ({ id: doctor.doctor_id.toString() }));
+}
 
-// [
-//   { id: "1" },
-//   { id: "2" },
-//   { id: "3" }
-// ]
+[
+  { id: "1" },
+  { id: "2" },
+  { id: "3" }
+]
 
 const SingleDoctor = async (props) => {
   const params = await props.params;

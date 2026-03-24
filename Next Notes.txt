@@ -362,5 +362,54 @@ finding a doctor that doesnot exist in db instead of page doesn't exist
 create not-found.jsx on app router file
 user => doctors => [id] => page.jsx
 
+Lecture 30 :
+generateStaticParams
+every time you change your id in params/url the req goes to doctor db thats not correct
+then make it static
+
+isr ststic to dynamic
+
+export async function generateStaticParams() {
+  const [doctors] = await db.execute(`select doctor_id from doctors`);
+  return doctors.map((doctor) => ({ id: doctor.doctor_id.toString() }));
+}
+
+[
+  { id: "1" },
+  { id: "2" },
+  { id: "3" }
+]
+
+next.js treats route params as string so we need to change db returned value in string
+saves in cache memory
+
+Lecture 31 : 
+Next.js Server Actions🔥Insert Contact Form Data into MySQL
+
+every input should have a name/props
+in react onSubmit/post in form but in next action={}
+"use server" => for server actions can write in function and top of file too
+
+const { fullName, email, message } = Object.fromEntries(formData.entries());
+
+nested array to plain js object
+
+Lecture 32 : 
+Next.js 15 Form Action in Client Component🔥Handle Form Submission in React & Next
+how to get db data in client component
+
+Lecture 33 : 
+React 19 useActionState🔥Show Loading + Handle Form Response Easily in Next.js
+previous state to tackle null in action function
+
+Lecture 34 : 
+React DOM useFormStatus Hook🔥Show Loading State on Submit Button in Next.js 15
+
+provide status information of last form submission 
+must be in form tag
+const { pending, data, method, action } = useFormStatus(); => no need to pass props in hook
+<Submit />
+
+
 
 
